@@ -1,0 +1,121 @@
+body {
+    font-size: 15pt;
+}
+
+:root{
+    --light-white:rgb(231, 233, 235);
+    --dark-theme :#282a32;
+    --light-dark-theme:#737785;
+    --white:white;
+    --blue:rgb(26 115 232);
+    --lop:rgba(60,62,67.15) 0 2px 4px 2px;
+       --border:.1rem solid rgba(0,0,0,.2);
+         --black:#2c3e50;
+         --light-bg:#eee;
+            --main-color:#8e44ad;
+}
+
+
+body{
+  background-color:var(--light-bg);
+}
+header{
+  position: fixed;
+   top:0; left:0; right: 0;
+   background-color: white;
+   z-index: 1000;
+
+   display: flex;
+   height:60px;
+   
+}
+#menubtn{
+  float: left;
+  display: block;
+  left: 0;
+  position: fixed;
+  top:15px;
+}
+.menuitems{
+ width:25px;
+ height:3px;
+ border-radius:5px;
+ margin: 5px;
+ background-color: black;
+}
+#holder{
+  display: inline;
+  float: both;
+  margin-left: 9px;
+}
+#logo{
+  border-radius: 50%;
+  height:53px;
+  width: 53px;
+  object-fit: cover;
+  display:inline;
+}
+
+#min{
+  height:100%;
+  width:100%;
+  position: fixed;
+  text-align: center;
+  background-color: white;
+  top:0;
+  z-index: 69990;
+  right:0;
+  left:0;
+  bottom: 0;
+}
+
+
+@keyframes myAnimation {
+         from {
+            height:0;
+         }
+         to {
+         height: 500px;
+         }
+      }
+      #hlpp {
+         animation: myAnimation  linear  ;
+   animation-fill-mode: forwards;
+   height:0;
+   width:100%;
+   background-color: white;
+   z-index: 1000;
+   border-top-left-radius: 9px;
+   border-top-right-radius: 9px;
+   position: fixed;
+   margin:auto;
+      bottom: 0;
+      transition: 1s;
+   display:none;
+ }
+   
+ #rotate {
+           transform: rotate(-315deg);         }
+
+
+        .load2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 10px whitesmoke;
+  border-top-color: black;
+  animation: load 1s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+@keyframes load {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
