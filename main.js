@@ -25,9 +25,7 @@ mmo.style.display = "none"
  var mipl = document.createElement("div")
 mipl.id = "hlpp"
 mipl.style.display = "flex"
-var tt = ' <div id="icn" onclick="name()" class="mio" style="bottom: 0;margin:0 auto;"><img src="cancel.svg"  alt="cancel.svg" id="rotate:hover"></div>'
 document.body.appendChild(mipl)
-mipl.innerHTML += tt
  }
  
  
